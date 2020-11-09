@@ -1,0 +1,5 @@
+.todo-item:hover {
+	color: red;
+	cursor: pointer;
+	text-decoration: line-through;
+}

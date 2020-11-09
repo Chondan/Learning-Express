@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo App</title>
+	<link rel="stylesheet" type="text/css" href="/public/assets/styles.css">
+</head>
+<body>
+	<input id="input" type="text" />
+	<button id="add-todo-btn">Add todo</button>
+	<ul id="todo-list">
+		<% data.forEach(todo => { %>
+			<li data-todo-id="<%= todo.id %>">
+				<span class="todo-item"><%= todo.item %></span>
+				<button class="view-todo-btn">view todo</button>
+			</li>
+		<% }) %>
+	</ul>
+	<script type="text/javascript" src="/public/js/todo.js"></script>
+</body>
+</html>
