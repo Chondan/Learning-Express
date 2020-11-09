@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session Management in NodeJS using Node and Express</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<form>
+		<input type="text" name="" id="email" placeholder="Type your email">
+		<input type="password" name="" id="password" placeholder="Type your password">
+		<input type="button" name="" id="submit" value="submit">
+	</form>
+	<script type="text/javascript">
+		window.onload = function() {
+			const submitBtn = document.getElementById("submit");
+			const inputEmail = document.getElementById("email");
+			const inputPassword = document.getElementById("password");
+			submitBtn.onclick = function() {
+				const email = inputEmail.value;
+				const password = inputPassword.value;
+				fetch('/login', {
+					method: "post", 
+					 headers: {
+					  'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+					},
+					body: `email=${email}&pass=${password}`
+				})
+				.then(res => res.text())
+				.then(data => {
+					if (data === "done") {
+						window.location.href = "/admin";
+					}
+				})
+				.catch(err => console.error(err));
+			}
+
+
+		}
+	</script>
+</body>
+</html>
