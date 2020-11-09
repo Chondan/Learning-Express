@@ -1,6 +1,6 @@
 # How to manage Session using Node.js and Express
 
-## Learning Stuffs[
+## Learning Stuffs
 - [TTL (time-to-live)](https://searchnetworking.techtarget.com/definition/time-to-live#:~:text=Time%2Dto%2Dlive%20(TTL)%20is%20a%20value%20in,long%20and%20should%20be%20discarded.)
 - hash and salt password
 	- Adding Salt to Hashing: A Better Way to Store Passwords
