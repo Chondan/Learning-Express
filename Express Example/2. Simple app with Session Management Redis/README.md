@@ -1,5 +1,10 @@
 # Session Management in Nodejs Using Redis as Session Store
 
+## SET UP
+- add database information in 'sample.env' and rename it to '.env'
+
+---
+
 ## Learning Stuffs
 - Connection Pool
 	- A **connection pool** is a *cache* of *database connections* maintained so that the connections can be reused when future requrests to the database are required. Connection pools are used to enhance the performance of executing commans on a database. Opening and manintaining a database connection for each user, especially requests made to a dynamic database-driven *website* application, is costly and wastes resources. In connection pooling, after a connection is created, it is placed in the pool and it is used again so that new connenction does not have to be established. If all the connections are being used, a new connection is made and is added to the pool. Connction pooling also cuts down on the amount of time a user must wait to establish a connection to the database.
@@ -45,7 +50,7 @@ async.waterfall([
 - LOGIN PAGE (login, register, checkemail) -> HOME PAGE (add status, Fetch status, show user_information, logout)
 
 STORE USER_INFO IN MYSQL DATABASE
-- when logged in -> retrieve data from database and store on session (redis)
+- when logged in -> retrieve data from database and store user_info on session (redis)
 - when logged out -> destroy session
 
 ROUTE
