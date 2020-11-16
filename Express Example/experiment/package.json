@@ -1,0 +1,25 @@
+{
+  "name": "experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.5",
+    "escape-html": "^1.0.3",
+    "express": "^4.17.1",
+    "marked": "^1.2.3",
+    "morgan": "^1.10.0",
+    "multiparty": "^4.2.2",
+    "online": "0.0.1",
+    "redis": "^3.0.2",
+    "vhost": "^3.0.2"
+  }
+}
